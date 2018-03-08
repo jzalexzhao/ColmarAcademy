@@ -1,0 +1,89 @@
+/* General Selectors */
+
+html {
+  font-size: 16px;
+  font: Helvetica;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+}
+
+
+
+
+/* Nav Bar*/
+
+
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width:100%;
+  height:64px;
+  background-color: lightgrey;
+}
+
+.logo {
+  height: 32px;
+  display: flex;
+  align-items: center;
+  margin-left: 24px;
+}
+
+nav {
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 16px;
+}
+
+.navigation {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+/* First Reading Part */
+.FirstRead {
+  top:64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ReadingPic {
+  margin: 32px 24px;
+  width:60%;
+}
+.ReadingPic img {
+  width: 100%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  width: 70%;
+}
+
+.button span {
+  color: white;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.word {
+  width: 40%;
+}

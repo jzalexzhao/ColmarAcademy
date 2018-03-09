@@ -9,6 +9,10 @@ h1 {
   font-size: 4rem;
 }
 
+h2 {
+  font-size: 3rem;
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -18,6 +22,10 @@ a {
 }
 
 a:visited {
+}
+
+img {
+  width: 100%;
 }
 
 
@@ -84,6 +92,69 @@ margin-right: 16px;
   padding-top: 15px;
   margin-bottom: 15px;
 }
-.word {
+
+.FirstRead .word {
   width: 40%;
+}
+
+/*Second Reading Part */
+
+
+.SecondRead {
+  display: flex;
+}
+
+.describe {
+  width: 60%;
+  margin:32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.SecondRead .ReadingPic{
+  width:100%;
+  margin:0 0;
+  margin-bottom: 32px;
+}
+
+
+
+.SecondRead .word {
+  margin-bottom: 32px;
+}
+
+.SecondRead .word p {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.info {
+  width: 40%;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pics {
+  width: 35%;
+  height: auto;
+}
+
+.intro .explanation {
+  width: 65%;
+  margin-left: 24px;
+}
+
+.intro h3, p, a {
+  margin-top: 8px;
+  margin-bottom: 8px;
 }

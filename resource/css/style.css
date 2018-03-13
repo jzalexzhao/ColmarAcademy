@@ -1,8 +1,11 @@
 /* General Selectors */
 
 html {
-  font-size: 1rem;
-  font: Helvetica;
+  font-size: 16px;
+  font-family:'Raleway', Helvetica ,sans-serif;
+  top:4rem;
+  background-color: #F9F9F9;
+  color: #555F65;
 }
 
 h1 {
@@ -19,9 +22,16 @@ h3 {
 
 a {
   text-decoration: none;
+  transition:all 350ms ease-in-out 0s;
 }
 
 a:visited {
+  color:#555F65;
+}
+
+a:hover {
+  color:#ABBAC2;
+  text-decoration: underline;
 }
 
 img {
@@ -33,20 +43,26 @@ video {
   height: auto;
 }
 
+body > div:nth-child(2n+2) {
+  background-color: #E9EDEF;
+}
 
-
+p {
+  line-height: 1.2rem;
+}
 
 /* Nav Bar*/
 
 
 header {
   top: 0;
+  position:fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width:100%;
   height:4rem;
-  background-color: lightgrey;
+  background-color: #F9F9F9;
 }
 
 .logo {
@@ -70,7 +86,6 @@ margin-right: 1rem;
 
 /* First Reading Part */
 .FirstRead {
-  top:4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -85,17 +100,34 @@ margin-right: 1rem;
 }
 
 .button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: grey;
   width: 70%;
+  -webkit-transition: box-shadow 350ms ease-in-out 0;
+  transition:box-shadow 350ms ease-in-out 0;
 }
 
 .button span {
-  color: white;
+  color: #F9F9F9;
   padding-top: 1rem;
   margin-bottom: 1rem;
+
+}
+
+.button:hover {
+  box-shadow: 5px 10px 8px #888888;
+}
+
+.buttonLink:hover {
+  text-decoration: none;
 }
 
 .FirstRead .word {
@@ -123,8 +155,9 @@ margin-right: 1rem;
   margin-bottom: 2rem;
 }
 
-
-
+.SecondRead .word {
+  text-align: center;
+}
 .SecondRead .word {
   margin-bottom: 2rem;
 }
@@ -147,16 +180,35 @@ margin-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border: 1px solid #E9EDEF;
+}
+
+.intro:nth-child(2n+1) {
+  background-color: #E9EDEF;
 }
 
 .pics {
   width: 35%;
   height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .intro .explanation {
   width: 65%;
   margin-left: 1.5rem;
+}
+
+.explanation a {
+  color: #7CBBFF;
+  text-decoration: underline;
+  transition:all 350ms ease-in-out;
+}
+
+.explanation a:hover {
+  color:#555F65;
+  text-decoration: none;
 }
 
 .intro h3, p, a {
@@ -171,8 +223,9 @@ margin-right: 1rem;
   text-align: center;
 }
 
-.course h2 {
+.courses h2 {
   margin-top: 2rem;
+  padding-top: 2rem;
 }
 
 .NamesIntro {
@@ -184,7 +237,7 @@ margin-right: 1rem;
 
 .courseBlock {
   text-align: left;
-  background-color: red;
+  background-color: #F9F9F9;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -198,7 +251,7 @@ margin-right: 1rem;
 /* Exhibition Section */
 
 .exhibition {
-  border-bottom: 1px solid lightgrey;
+  border-bottom: 1px solid #E9EDEF;
 }
 
 .exhibition h2 {
@@ -217,6 +270,7 @@ margin-right: 1rem;
 .videoPart {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 60%;
   height: auto;
   margin-right: 1.5rem;
@@ -232,10 +286,15 @@ margin-right: 1rem;
   display: flex;
 }
 
+.ThesisInfo:nth-child(500n+1) {
+  background-color: #E9EDEF;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+}
+
 .ThesisInfo img {
   margin-left: 1rem;
   margin-right: 1rem;
-  margin-bottom: 2rem;
   width: 35%;
   height: auto;
 }
@@ -247,7 +306,9 @@ margin-right: 1rem;
 }
 
 /**Rights section **/
+
 .rights {
+  background-color: #F9F9F9 !important;
   margin: 1.5rem 1.5rem 3rem 1.5rem;
   display: flex;
   align-items: center;

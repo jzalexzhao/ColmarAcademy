@@ -180,11 +180,11 @@ margin-right: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #E9EDEF;
+  border: 1px solid #F9F9F9;
 }
 
 .intro:nth-child(2n+1) {
-  background-color: #E9EDEF;
+  background-color: #F9F9F9;
 }
 
 .pics {
@@ -251,7 +251,7 @@ margin-right: 1rem;
 /* Exhibition Section */
 
 .exhibition {
-  border-bottom: 1px solid #E9EDEF;
+  border-bottom: 1px solid #F9F9F9;
 }
 
 .exhibition h2 {
@@ -287,7 +287,7 @@ margin-right: 1rem;
 }
 
 .ThesisInfo:nth-child(500n+1) {
-  background-color: #E9EDEF;
+  background-color: #F9F9F9;
   margin-bottom: 2rem;
   padding: 1rem 0;
 }
